@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+issueTrackerURL="https://space.bilibili.com/506597031"
+
+[[mixins]]
+config="savage_wither.mixins.json"
+
+[[mods]]
+modId="savage_wither"
+version="1.0.0"
+displayName="更凶猛的凋零"
+# logoFile="pack.png"
+authors="Xiaoyu_2009"
+displayURL="https://space.bilibili.com/506597031"
+description='''
+此模组对凋零添加了数值配置及ai智能化[更聪明了]
+'''
+
+[[dependencies.savage_wither]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.savage_wither]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH" 
