@@ -180,9 +180,9 @@ public class WitherEventHandler {
 
         double randomFactor = 2.0 - accuracy;
         Vec3 randomOffset = new Vec3(
-                (wither.getRandom().nextDouble() - 0.5) * 2.0 * randomFactor,
-                (wither.getRandom().nextDouble() - 0.5) * 1.0 * randomFactor,
-                (wither.getRandom().nextDouble() - 0.5) * 2.0 * randomFactor);
+        (wither.getRandom().nextDouble() - 0.5) * 2.0 * randomFactor,
+        (wither.getRandom().nextDouble() - 0.5) * 1.0 * randomFactor,
+        (wither.getRandom().nextDouble() - 0.5) * 2.0 * randomFactor);
 
         return frontPosition.add(randomOffset);
     }

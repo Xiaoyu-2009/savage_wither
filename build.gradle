@@ -86,6 +86,12 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
+// 配置Mixin不生成默认的refmap文件
+mixin {
+    add sourceSets.main, "savage_wither.refmap.json"
+    config "savage_wither.mixins.json"
+}
+
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
             minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,

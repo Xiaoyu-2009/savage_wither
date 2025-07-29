@@ -80,9 +80,9 @@ public class WitherPredictiveAimMixin {
         double randomSpread = (2.0 - accuracy);
 
         Vec3 randomOffset = new Vec3(
-                (wither.getRandom().nextDouble() - 0.5) * randomSpread,
-                (wither.getRandom().nextDouble() - 0.5) * randomSpread * 0.5,
-                (wither.getRandom().nextDouble() - 0.5) * randomSpread);
+        (wither.getRandom().nextDouble() - 0.5) * randomSpread,
+        (wither.getRandom().nextDouble() - 0.5) * randomSpread * 0.5,
+        (wither.getRandom().nextDouble() - 0.5) * randomSpread);
 
         return frontPosition.add(randomOffset);
     }
